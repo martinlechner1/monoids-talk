@@ -6,8 +6,9 @@ import scala.collection.mutable.{Map => MMap}
 
 object Motivation {
 
-  private val data: List[Map[String, Int]] =
-    List(Map("A" -> 1, "B" -> 2), Map("B" -> 2), Map("A" -> 3), Map("C" -> 4))
+  private val data: List[Map[String, Int]] = List(Map("A" -> 1, "B" -> 2), Map("A" -> 41))
+
+  Map("A" -> 42, "B" -> 2)
 
   def manualCombine(): Map[String, Int] = {
     val initialMap = MMap.empty[String, Int].withDefaultValue(0)

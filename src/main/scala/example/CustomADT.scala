@@ -7,11 +7,9 @@ case class Statistics(detailPageView: Int, listPageView: Int, email: Int)
 
 object CustomADT {
 
-  // The function of the beginning...
   def combineAll[A: Monoid](as: List[A]): A =
     as.foldLeft(Monoid[A].empty)(Monoid[A].combine)
 
-  // How to combine
   implicit val statisticsMonoid = new Monoid[Statistics] {
     def empty = Statistics(0, 0, 0)
     def combine(a: Statistics, b: Statistics) =
