@@ -10,5 +10,5 @@ object App extends App {
   println(s"Cats:   ${catsCombine()}")
   println(s"Combination: ${exampleCombination()}")
   println(s"CombinationTypeclass: ${exampleCombinationTypeclass()}")
-  // runDemo
+  runDemo
 }
